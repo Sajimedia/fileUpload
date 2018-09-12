@@ -1,9 +1,17 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>IMG upload</title>
-</head>
-<body>
-
-</body>
+   <head>
+      <title>Image Upload</title>
+   </head>
+   <body>
+      <input type="file" id="siofu_input" />
+   </body>
+   <script src = "/socket.io/socket.io.js"></script>
+   <script src="/siofu/client.js"></script>
+   <script>
+      var socket = io();
+     // var SocketIOFileUpload = require('socketio-file-upload');
+      var uploader = new SocketIOFileUpload(socket);
+	  uploader.listenOnInput(document.getElementById("siofu_input"));
+	</script>
 </html>
