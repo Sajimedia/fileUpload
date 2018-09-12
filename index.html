@@ -11,8 +11,7 @@
    <script src="/siofu/client.js"></script>
    <script>
       var socket = io();
-     // var SocketIOFileUpload = require('socketio-file-upload');
       var uploader = new SocketIOFileUpload(socket);
-	  uploader.listenOnSubmit(document.getElementById("my_button"), document.getElementById("file_input"));	
-	</script>
+	  uploader.listenOnSubmit(document.getElementById("my_button"), document.getElementById("file_input"));
+    </script>
 </html>

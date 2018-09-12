@@ -12,6 +12,7 @@ io.on('connection', function(socket) {
    var uploader = new siofu();
     uploader.dir = "uploads";
     uploader.listen(socket);
+
 });
 
 http.listen(3000, function() {
