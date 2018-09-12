@@ -1,0 +1,22 @@
+{
+  "name": "imageandsocket",
+  "version": "1.0.0",
+  "description": "try to upload file using socket io ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sajimedia/fileUpload.git"
+  },
+  "author": "Sajith",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sajimedia/fileUpload/issues"
+  },
+  "homepage": "https://github.com/Sajimedia/fileUpload#readme",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}
