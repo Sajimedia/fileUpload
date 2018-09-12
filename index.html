@@ -4,7 +4,8 @@
       <title>Image Upload</title>
    </head>
    <body>
-      <input type="file" id="siofu_input" />
+     <label>Upload File: <input type="file" id="file_input" /></label>
+	 <button id="my_button">Upload File</button>
    </body>
    <script src = "/socket.io/socket.io.js"></script>
    <script src="/siofu/client.js"></script>
@@ -12,6 +13,6 @@
       var socket = io();
      // var SocketIOFileUpload = require('socketio-file-upload');
       var uploader = new SocketIOFileUpload(socket);
-	  uploader.listenOnInput(document.getElementById("siofu_input"));
+	  uploader.listenOnSubmit(document.getElementById("my_button"), document.getElementById("file_input"));	
 	</script>
 </html>
